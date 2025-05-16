@@ -1,27 +1,19 @@
-'use strict';
+"use strict"
 
-module.exports = function (app) {
+// a file that I edited
 
-  app.route('/api/issues/:project')
-  
-    .get(function (req, res){
-      let project = req.params.project;
-      
-    })
-    
-    .post(function (req, res){
-      let project = req.params.project;
-      
-    })
-    
-    .put(function (req, res){
-      let project = req.params.project;
-      
-    })
-    
-    .delete(function (req, res){
-      let project = req.params.project;
-      
-    });
-    
-};
+module.exports = function(app) {
+   app.route("/api/issues/:project")
+   .get(function (req, res){
+      const project = req.params.project
+   })
+   .post(function (req, res){
+      const project = req.params.project
+   })
+   .put(function (req, res){
+      const project = req.params.project
+   })
+   .delete(function (req, res){
+      const project = req.params.project
+   })
+}
